@@ -8,8 +8,11 @@
 
       <div class="cards-container">
         <div class="card">
-          <p class="main-text"></p>
-          <p class="date"></p>
+          <p class="main-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            suscipit facere, culpa laudantium eaque similique!
+          </p>
+          <p class="date">11/22/2023</p>
         </div>
       </div>
     </div>
@@ -50,5 +53,28 @@ button {
   border-radius: 100%;
   color: white;
   font-size: 20px;
+}
+
+.card {
+  width: 225px;
+  height: 225px;
+  background-color: rgb(237, 182, 44);
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 12.5px;
+  font-weight: bold;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 </style>
