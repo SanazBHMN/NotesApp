@@ -45,12 +45,15 @@ const addNote = () => {
       </header>
 
       <div class="cards-container">
-        <div class="card">
+        <div
+          v-for="note in notes"
+          class="card"
+          :style="{ backgroundColor: note.backgroundColor }"
+        >
           <p class="main-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            suscipit facere, culpa laudantium eaque similique!
+            {{ note.text }}
           </p>
-          <p class="date">11/22/2023</p>
+          <p class="date">{{ note.date.toLocaleDateString("en-US") }}</p>
         </div>
       </div>
     </div>
